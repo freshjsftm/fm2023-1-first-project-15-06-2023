@@ -4,8 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learn HTML</title>
+    <style>
+      /* селектор тега  001 */
+      h2 {
+        color: green;
+      }
+      /* селектор ідентифікатора 100 */
+      #uniq {
+        color: pink;
+        /* color: pink !important;  */
+        /* !important bad practice */
+      }
+      /* селектор класу 010 */
+      .color-accent {
+        color: red;
+      }
+      .color-info {
+        color: blue;
+      }
+      /* селектор 2 класу 020 */
+      .color-accent.color-info {
+        color: yellow;
+      }
+      /* 111 */ 
+      h2#uniq.color-accent{
+        color: purple;
+      }
+    </style>
   </head>
   <body>
-    <a href="https://google.com" target="_blank"><button>link</button></a>
+    <!-- вбудовані стилі 1000 -->
+    <h2 style="color: chocolate">title heading 1</h2>
+    <h2 class="color-info color-accent">title heading 2</h2>
+    <h2 id="uniq" class="color-accent">title heading 3</h2>
+    <h2>title heading 4</h2>
+    <h2 class="color-accent">title heading 5</h2>
+    <h2>title heading 6</h2>
   </body>
 </html>
