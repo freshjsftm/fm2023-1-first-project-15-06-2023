@@ -1,14 +1,20 @@
-body {
+body { 
   font-size: 24px;
+  color: yellow;
+  border: 6px double pink;
 }
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 .main-article{
-  border: 2px solid red;
   font-size: 1.5em; /*36px*/
 }
 .main-article__heading{
-  border: inherit;
   font-size: 1.5em; /*54px*/
 }
 .main-article__content{
   font-size: initial;
+  color: blue;
 }
