@@ -1,41 +1,14 @@
 body {
-  background-color: aqua;
   font-size: 24px;
 }
-div {
-  text-align: center;
+.main-article{
+  border: 2px solid red;
+  font-size: 1.5em; /*36px*/
 }
-img {
-  width: 100px;
-  border-radius: 50%;
+.main-article__heading{
+  border: inherit;
+  font-size: 1.5em; /*54px*/
 }
-h1,
-h2 {
-  background-color: azure;
-  font-size: 1.5em;
-  font-family: 'Moirai One', cursive;
-  text-align: center;
-}
-.logo {
-  font-size: 3em;
-  font-family: 'Caveat', cursive;
-  font-weight: 500;
-  border-top: 6px red solid;
-  border-bottom: 3px red solid;
-}
-a {
-  /* text-decoration: dotted red 2px underline; */
-  text-decoration: none;
-  background-color: azure;
-  border-radius: 5px;
-}
-p {
-  font-size: 24px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  line-height: 1.3em;
-  text-indent: 2em;
-  text-align: justify;
-}
-em {
-  background-color: azure;
+.main-article__content{
+  font-size: initial;
 }
