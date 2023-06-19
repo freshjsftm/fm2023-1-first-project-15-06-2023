@@ -1,4 +1,9 @@
-img{
+body{
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+img {
   box-sizing: border-box;
   /* height: 300px; */
   width: 200px;
@@ -8,4 +13,26 @@ img{
   padding: 20px 50px;
   margin: 30px;
   background-color: aqua;
+}
+article {
+  text-align: center;
+}
+span {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 6px solid blue;
+  padding: 30px;
+  margin: 30px;
+}
+div {
+  box-sizing: border-box;
+  width: 300px;
+  border: 6px solid green;
+  padding: 30px;
+  /* margin: 30px auto; */
+}
+.margin {
+  margin-top: 60px;
+  margin-bottom: -10px;
+  border: 6px solid aqua;
 }
