@@ -1,30 +1,104 @@
-table {
-  min-width: 1100px;
-  width: 70%;
-  min-width: 600px;
-  border: 3px solid blue;
-  border-collapse: collapse;
-  border-spacing: 12px; /*border-collapse: separate;*/
+:root {
+  font-size: 14px;
+  color: purple;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* *:hover{
+  color: #fff;
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: serif;
+}
+a{
+  color: inherit;
+}
+/* :link — :visited — :hover — :active */
+/* a:-webkit-any-link{
+  color: #fff;
+}
+a:link{
+  color: #fff;
+}
+a:visited{
+  color: #000;
+} */
+a:hover{
+  color: red;
+}
+/* a:active{
+  color: blue;
+} */
+
+
+#container {
+  width: 95%;
+  padding: 2%;
+  border: 1px solid red;
   margin: auto;
 }
-th,
-td {
-  border: 3px solid red;
+
+.block {
+  border: 3px solid blue;
 }
-td {
-  /* width: 20%; */
-  vertical-align: bottom;
+#container p:last-child {
+  background-color: orange;
 }
-p {
-  margin: 0;
+#container p {
+  background-color: yellow;
 }
-.first-col {
-  width: 50px;
+#container :nth-child(3) {
+  background-color: darkred;
 }
-.gor-right {
-  text-align: right;
+#container :nth-child(3):focus {
+  color: #fff;
 }
-caption {
-  caption-side: bottom;
-  text-align: left;
+
+#container p:last-child {
+  background-color: orange;
+}
+#container > p {
+  background-color: pink;
+  font-size: 1.5rem;
+}
+#container p + p {
+  background-color: lime;
+}
+#container > p ~ blockquote {
+  background-color: aqua;
+}
+
+a[target='_blank'] {
+  font-size: 2em;
+}
+
+
+li:nth-child(odd) {
+  background-color: purple;
+}
+li:nth-child(even) {
+  background-color: yellow;
+}
+li:nth-child(3n+4) {
+  background-color: blue;
+}
+
+
+tbody>tr:nth-child(odd)>td:nth-child(odd){}
+
+
+tbody>tr:nth-child(odd)>td:nth-child(even),
+tbody>tr:nth-child(even)>td:nth-child(odd){}
+
+thead>tr{
+  color: #fff;
+}
+thead>tr>th:first-child{
+
 }
