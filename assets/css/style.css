@@ -1,29 +1,30 @@
-body{
-  margin: 0;
-  box-sizing:border-box;
-}
-div{
-  border: 3px solid red;
-}
-.wrapper{
-  max-width: 700px;
-  width: 80%;
-  min-width: 500px;
-  /* max-height: 700px;
-  height: 600px;
-  min-height: 500px; */
+table {
+  min-width: 1100px;
+  width: 70%;
+  min-width: 600px;
+  border: 3px solid blue;
+  border-collapse: collapse;
+  border-spacing: 12px; /*border-collapse: separate;*/
   margin: auto;
 }
-.inner{
-  border-color: blue;
-  width: 50%;
-  /* height: 30%; */
-  padding: 10%;
+th,
+td {
+  border: 3px solid red;
 }
-
-img{
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  object-position: center center;
+td {
+  /* width: 20%; */
+  vertical-align: bottom;
+}
+p {
+  margin: 0;
+}
+.first-col {
+  width: 50px;
+}
+.gor-right {
+  text-align: right;
+}
+caption {
+  caption-side: bottom;
+  text-align: left;
 }
