@@ -64,6 +64,7 @@ body {
   width: 100%;
 }
 .main-article__heading::after{
+  /*home work TRANSITION*/
   content: "!!!";
   display: block;
 }
